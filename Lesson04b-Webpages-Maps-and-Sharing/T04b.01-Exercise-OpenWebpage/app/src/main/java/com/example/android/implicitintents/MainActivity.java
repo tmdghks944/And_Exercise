@@ -30,12 +30,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /**
-     * This method is called when the Open Website button is clicked. It will open the website
-     * specified by the URL represented by the variable urlAsString using implicit Intents.
-     *
-     * @param v Button that was clicked.
-     */
     public void onClickOpenWebpageButton(View v) {
         // TODO (5) Create a String that contains a URL ( make sure it starts with http:// or https:// )
         String urlAsString = "http://www.naver.com";
@@ -43,12 +37,6 @@ public class MainActivity extends AppCompatActivity {
         openWebpage(urlAsString);
     }
 
-    /**
-     * This method is called when the Open Location in Map button is clicked. It will open the
-     * a map to the location represented by the variable addressString using implicit Intents.
-     *
-     * @param v Button that was clicked.
-     */
     public void onClickOpenAddressButton(View v) {
         Toast.makeText(this, "TODO: Open a map when this button is clicked", Toast.LENGTH_SHORT).show();
     }
@@ -72,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param v Button that was clicked.
      */
+
     public void createYourOwn(View v) {
         Toast.makeText(this,
                 "TODO: Create Your Own Implicit Intent",
@@ -91,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
         if(intent.resolveActivity(getPackageManager()) != null){
             startActivity(intent);
         }
-
     }
 
 }

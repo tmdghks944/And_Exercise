@@ -49,7 +49,7 @@
     <!--TODO (16) Give the TextView a top margin of 8dp-->
     <!--TODO (17) Set the text to tell the user their search URL will show up here when they click search-->
     <TextView
-        android:id="@+id/tv_url_display"
+        android:id="@+id/stv_url_diplay"
         android:textSize="22sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -23,6 +23,8 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.net.Uri;
+import java.net.URL;
 
 import com.example.android.datafrominternet.utilities.NetworkUtils;
 

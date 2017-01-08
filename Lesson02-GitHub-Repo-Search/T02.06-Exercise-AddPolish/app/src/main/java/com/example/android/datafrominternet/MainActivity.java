@@ -22,6 +22,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.example.android.datafrominternet.utilities.NetworkUtils;
@@ -38,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView mSearchResultsTextView;
 
     // TODO (12) Create a variable to store a reference to the error message TextView
-    TextView errorMessageTextView;
+    private TextView errorMessageTextView;
     // TODO (24) Create a ProgressBar variable to store a reference to the ProgressBar
-    ProgressBar mLoadingIndicator;
+    private ProgressBar mLoadingIndicator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,13 +73,13 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO (14) Create a method called showJsonDataView to show the data and hide the error
     private void showJsonDataView(){
-        mErrorMessageDisplay.setVisibility(View.INVISIBLE);
+       errorMessageTextView.setVisibility(View.INVISIBLE);
         mSearchResultsTextView.setVisibility(View.VISIBLE);
     }
     // TODO (15) Create a method called showErrorMessage to show the error and hide the data
     private void showErrorMessage(){
         mSearchResultsTextView.setVisibility(View.INVISIBLE);
-        mErrorMessageDisplay.setVisibility(View.VISIBLE);
+        errorMessageTextView.setVisibility(View.VISIBLE);
     }
     public class GithubQueryTask extends AsyncTask<URL, Void, String> {
 
