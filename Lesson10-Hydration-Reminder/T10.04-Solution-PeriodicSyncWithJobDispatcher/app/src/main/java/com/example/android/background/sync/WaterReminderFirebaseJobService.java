@@ -27,8 +27,6 @@ import com.firebase.jobdispatcher.RetryStrategy;
 public class WaterReminderFirebaseJobService extends JobService {
 
     private AsyncTask mBackgroundTask;
-
-
     // COMPLETED (4) Override onStartJob
     /**
      * The entry point to your Job. Implementations should offload work to another thread of
